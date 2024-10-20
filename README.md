@@ -65,9 +65,11 @@ python src/model_training.py --mode threaded
 ```
 ## Understanding the Models
 
-  ## Decision Tree Classifier
+  ## Decision Tree Classifier:
+  
   A Decision Tree is a flowchart-like structure used for classification and regression tasks. It splits the dataset into subsets based on feature values, creating a tree where each node represents a feature, 
   each branch represents a decision rule, and each leaf represents an outcome.
+  
   ## Key Concepts
   
   Nodes and Leaves Internal nodes represent features; leaves represent class labels or outcomes.
@@ -89,3 +91,28 @@ python src/model_training.py --mode threaded
   ## Implementation
   
   Library Used: sklearn.tree.DecisionTreeClassifier
+
+  ## Random Forest Classifier:
+
+  A Random Forest is an ensemble learning method that constructs multiple decision trees during training and outputs the mode of their predictions.
+
+  ## Key Concepts:
+
+  Ensemble Method: Combines multiple models to improve predictive performance.
+
+  Bootstrap Aggregation: Each tree is trained on a random subset of the data with replacement.
+
+  Feature Randomness: At each split, a random subset of features is considered, which decorrelates the trees.
+
+  ## Algorithm Steps:
+
+  Create Multiple Decision Trees: For each tree, select a bootstrap sample from the dataset.
+
+  Random Feature Selection: At each node, select a random subset of features to consider for splitting.
+
+  Aggregate Predictions: For classification, use majority voting across all trees.
+
+  ## Implementation Details:
+
+  Library Used: sklearn.ensemble.RandomForestClassifier
+
