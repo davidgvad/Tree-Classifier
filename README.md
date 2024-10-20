@@ -68,11 +68,11 @@ python src/model_training.py --mode threaded
   ## Decision Tree Classifier
   A Decision Tree is a flowchart-like structure used for classification and regression tasks. It splits the dataset into subsets based on feature values, creating a tree where each node represents a feature, 
   each branch represents a decision rule, and each leaf represents an outcome.
-  ## Key Concepts:
+  ## Key Concepts
      Nodes and Leaves: Internal nodes represent features; leaves represent class labels or outcomes.
      Splitting Criteria: Determines how the data is split at each node (e.g., Gini impurity, entropy).
      Pruning: Reduces the size of the tree to prevent overfitting by removing branches that have little power in classifying instances.
-  ## Algorithm Steps:
+  ## Algorithm Steps
 
      Use metrics like Information Gain or Gini Impurity to choose the feature that best separates the data.
      
@@ -84,5 +84,5 @@ python src/model_training.py --mode threaded
      
      Assign Class Labels:
      In classification trees, assign the most common class in the subset to the leaf node.
-  ## Implementation:
+  ## Implementation
      Library Used: sklearn.tree.DecisionTreeClassifier
