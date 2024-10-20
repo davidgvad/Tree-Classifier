@@ -71,10 +71,10 @@ python src/model_training.py --mode threaded
   ## Key Concepts
   Nodes and Leaves Internal nodes represent features; leaves represent class labels or outcomes.
   Splitting Criteria: Determines how the data is split at each node (e.g., Gini impurity, entropy).
-     Pruning: Reduces the size of the tree to prevent overfitting by removing branches that have little power in classifying instances.
+  Pruning Reduces the size of the tree to prevent overfitting by removing branches that have little power in classifying instances.
   ## Algorithm Steps
 
-     Use metrics like Information Gain or Gini Impurity to choose the feature that best separates the data.
+  Use metrics like Information Gain or Gini Impurity to choose the feature that best separates the data.
      
      Create a Decision Node:
      Split the dataset into subsets where the selected feature has different values.
