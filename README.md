@@ -8,8 +8,6 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Threaded Mode](#threaded-mode)
-  - [Manual Mode](#manual-mode)
 - [Understanding the Models](#understanding-the-models)
   - [Decision Tree Classifier](#decision-tree-classifier)
   - [Random Forest Classifier](#random-forest-classifier)
@@ -56,13 +54,16 @@ The **Tree Classifier Project** is a Python implementation that leverages both D
 
 ## Usage
 
-Run the model training script with the desired mode:
+This project offers flexible training options for the Decision Tree and Random Forest classifiers using the KDD Cup 1999 dataset. Users can choose how to run the training process based on their needs:
 
-### Threaded Mode
-Trains both models concurrently:
-```bash
-python src/model_training.py --mode threaded
-```
+- **Concurrent Training with Threading**: Allows you to train models using different train/test splits simultaneously. This method leverages threading to parallelize training tasks, reducing the total computation time.
+
+- **Manual Sequential Training**: Offers the option to run training sessions sequentially for each specified train/test proportion. This approach is useful for detailed performance analysis under controlled conditions.
+
+- **Algorithm Selection**: Users can specify whether to train using the Decision Tree or Random Forest algorithm. This flexibility allows for comparative analysis of model performance and characteristics.
+
+Each training mode and algorithm choice can be manually adjusted in the script parameters, providing a customizable experience depending on the user's objectives and computational resources.
+
 ## Understanding the Models
 
   ## Decision Tree Classifier:
