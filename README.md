@@ -1,27 +1,64 @@
-# Decision Tree and Random Forest Classifiers for Intrusion Detection
+# Tree Classifier Project
 
-## Introduction
-
-This project implements Decision Tree and Random Forest classifiers to detect network intrusions using the KDD Cup 1999 dataset. The models are trained using different train/test splits, either concurrently using threading or manually, to evaluate their performance.
+![License](https://img.shields.io/github/license/yourusername/Tree-Classifier)
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 
 ## Table of Contents
-
-- [Dataset](#dataset)
-- [Project Structure](#project-structure)
+- [Description](#description)
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Implementation Details](#implementation-details)
-- [Results](#results)
+  - [Threaded Mode](#threaded-mode)
+  - [Manual Mode](#manual-mode)
 - [Understanding the Models](#understanding-the-models)
-- [Future Work](#future-work)
-- [Contributing](#contributing)
-- [License](#license)
+  - [Decision Tree Classifier](#decision-tree-classifier)
+  - [Random Forest Classifier](#random-forest-classifier)
+- [Threading Implementation](#threading-implementation)
+- [Additional Information](#additional-information)
 
-## Dataset
+## Description
+The **Tree Classifier Project** is a Python implementation that leverages both Decision Tree and Random Forest classifiers to analyze and classify data, particularly focusing on distinguishing normal network traffic from intrusions. This project offers functionalities for data preprocessing, model training, and evaluation, with the added benefit of threading to enhance computational efficiency.
 
-The KDD Cup 1999 dataset is used for training and testing the classifiers.
+## Features
+- **Decision Tree Classifier**: Implements a flowchart-like structure for classification tasks.
+- **Random Forest Classifier**: Utilizes an ensemble of decision trees to improve prediction accuracy.
+- **Threaded Execution**: Allows concurrent training of models to optimize resource utilization.
+- **Manual Execution**: Enables sequential model training with customizable test sizes.
+- **Detailed Documentation**: Provides theoretical background and implementation details.
+- **Modular Design**: Facilitates easy maintenance and extension of the codebase.
 
-- **Source**: [KDD Cup 1999 Data](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html)
-- **Description**: Simulated network traffic data containing normal and malicious connections with 41 features and labels.
+## Installation
 
-**Note**: The dataset is not included in this repository due to its size. Please download it from the link above and place it in the `data/raw/` directory.
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/yourusername/Tree-Classifier.git
+    cd Tree-Classifier
+    ```
+
+2. **Create and Activate a Virtual Environment**
+    ```bash
+    # On Windows using Git Bash
+    python -m venv venv
+    source venv/Scripts/activate
+
+    # On macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3. **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Download the Dataset**
+    Follow the download instructions provided in the project documentation to obtain the necessary dataset.
+
+## Usage
+
+Run the model training script with the desired mode:
+
+### Threaded Mode
+Trains both models concurrently:
+```bash
+python src/model_training.py --mode threaded
