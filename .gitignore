@@ -1,0 +1,15 @@
+# Virtual environment
+venv/
+
+# Data files
+data/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore data files
+data/
