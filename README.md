@@ -98,11 +98,11 @@ python src/model_training.py --mode threaded
 
   ## Key Concepts:
 
-  Ensemble Method: Combines multiple models to improve predictive performance.
+      Ensemble Method: Combines multiple models to improve predictive performance.
 
-  Bootstrap Aggregation: Each tree is trained on a random subset of the data with replacement.
+      Bootstrap Aggregation: Each tree is trained on a random subset of the data with replacement.
 
-  Feature Randomness: At each split, a random subset of features is considered, which decorrelates the trees.
+      Feature Randomness: At each split, a random subset of features is considered, which decorrelates the trees.
 
   ## Algorithm Steps:
 
