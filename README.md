@@ -67,7 +67,13 @@ This project offers flexible training options for the Decision Tree and Random F
 
 Each training mode and algorithm choice can be manually adjusted in the script parameters, providing a customizable experience depending on the user's objectives and computational resources.
 
+<!-- Adding extra newlines for spacing -->
+
+<!-- Adding extra newlines for spacing -->
+
 ### Threading Implementation
+
+<!-- Adding extra newlines for spacing -->
 
 **Purpose of Threading**
 
@@ -85,6 +91,8 @@ In this project, threading is used to facilitate the concurrent execution of mul
 
 ## Understanding the Models
 
+<!-- Adding extra newlines for spacing -->
+<!-- Adding extra newlines for spacing -->
 <!-- Adding extra newlines for spacing -->
 
   ## Decision Tree Classifier:
