@@ -14,8 +14,10 @@
 - [Threading Implementation](#threading-implementation)
 - [Additional Information](#additional-information)
 
+
 ## Description
 The **Tree Classifier Project** is a Python implementation that leverages both Decision Tree and Random Forest classifiers to analyze and classify data, particularly focusing on distinguishing normal network traffic from intrusions. This project offers functionalities for data preprocessing, model training, and evaluation, with the added benefit of threading to enhance computational efficiency.
+
 
 ## Features
 - **Decision Tree Classifier**: Implements a flowchart-like structure for classification tasks.
@@ -52,6 +54,7 @@ The **Tree Classifier Project** is a Python implementation that leverages both D
 4. **Download the Dataset**
     Follow the download instructions provided in the project documentation to obtain the necessary dataset.
 
+
 ## Usage
 
 This project offers flexible training options for the Decision Tree and Random Forest classifiers using the KDD Cup 1999 dataset. Users can choose how to run the training process based on their needs:
@@ -64,7 +67,10 @@ This project offers flexible training options for the Decision Tree and Random F
 
 Each training mode and algorithm choice can be manually adjusted in the script parameters, providing a customizable experience depending on the user's objectives and computational resources.
 
+
 ## Understanding the Models
+
+
 
   ## Decision Tree Classifier:
   
@@ -92,6 +98,7 @@ Each training mode and algorithm choice can be manually adjusted in the script p
   ## Implementation
   
       Library Used: sklearn.tree.DecisionTreeClassifier
+
 
   ## Random Forest Classifier:
 
