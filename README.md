@@ -1,6 +1,6 @@
 # Tree Classifier Project
 
-![License](https://img.shields.io/github/license/yourusername/Tree-Classifier)
+![License](https://img.shields.io/github/license/davidgvad/Tree-Classifier)
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 
 ## Table of Contents
