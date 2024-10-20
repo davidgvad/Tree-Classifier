@@ -12,7 +12,6 @@
   - [Decision Tree Classifier](#decision-tree-classifier)
   - [Random Forest Classifier](#random-forest-classifier)
 - [Threading Implementation](#threading-implementation)
-- [Additional Information](#additional-information)
 
 
 ## Description
