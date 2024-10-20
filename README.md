@@ -69,8 +69,8 @@ python src/model_training.py --mode threaded
   A Decision Tree is a flowchart-like structure used for classification and regression tasks. It splits the dataset into subsets based on feature values, creating a tree where each node represents a feature, 
   each branch represents a decision rule, and each leaf represents an outcome.
   ## Key Concepts
-     Nodes and Leaves: Internal nodes represent features; leaves represent class labels or outcomes.
-     Splitting Criteria: Determines how the data is split at each node (e.g., Gini impurity, entropy).
+  Nodes and Leaves Internal nodes represent features; leaves represent class labels or outcomes.
+  Splitting Criteria: Determines how the data is split at each node (e.g., Gini impurity, entropy).
      Pruning: Reduces the size of the tree to prevent overfitting by removing branches that have little power in classifying instances.
   ## Algorithm Steps
 
