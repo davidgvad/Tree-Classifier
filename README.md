@@ -67,6 +67,43 @@ This project offers flexible training options for the Decision Tree and Random F
 
 Each training mode and algorithm choice can be manually adjusted in the script parameters, providing a customizable experience depending on the user's objectives and computational resources.
 
+### Threading Implementation
+
+**Purpose of Threading**
+
+In this project, threading is used to facilitate the concurrent execution of multiple model training processes. This approach helps to optimize the training duration, allowing different configurations of Decision Tree and Random Forest classifiers to be evaluated simultaneously on various train/test splits.
+
+**Benefits of Threading**:
+
+- **Efficiency**: Enables faster processing by allowing multiple train/test configurations to run in parallel, making better use of computational resources.
+- **Non-blocking Operations**: Threads operate independently, enabling the system to execute other operations in parallel, which is especially useful in environments that require maintaining responsiveness.
+
+**Technical Implementation**:
+
+- **Using Python's `threading` Module**: The project uses Python's `threading` module to handle the concurrent execution of training routines. This includes thread creation, starting, and management.
+
+**Code Example**:
+
+```python
+import threading
+
+def model_training_routine(params):
+    # Placeholder for training logic
+    pass
+
+# Example configurations for training
+training_configurations = [config1, config2, config3]
+
+threads = []
+for config in training_configurations:
+    thread = threading.Thread(target=model_training_routine, args=(config,))
+    threads.append(thread)
+    thread.start()
+
+# Ensuring all threads complete their execution before moving on
+for thread in threads:
+    thread.join()
+
 
 ## Understanding the Models
 
