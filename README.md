@@ -85,7 +85,7 @@ In this project, threading is used to facilitate the concurrent execution of mul
 
 ## Understanding the Models
 
-
+<!-- Adding extra newlines for spacing -->
 
   ## Decision Tree Classifier:
   
