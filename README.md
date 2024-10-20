@@ -82,28 +82,6 @@ In this project, threading is used to facilitate the concurrent execution of mul
 
 - **Using Python's `threading` Module**: The project uses Python's `threading` module to handle the concurrent execution of training routines. This includes thread creation, starting, and management.
 
-**Code Example**:
-
-```python
-import threading
-
-def model_training_routine(params):
-    # Placeholder for training logic
-    pass
-
-# Example configurations for training
-training_configurations = [config1, config2, config3]
-
-threads = []
-for config in training_configurations:
-    thread = threading.Thread(target=model_training_routine, args=(config,))
-    threads.append(thread)
-    thread.start()
-
-# Ensuring all threads complete their execution before moving on
-for thread in threads:
-    thread.join()
-
 
 ## Understanding the Models
 
