@@ -1,0 +1,2 @@
+The first two images illustrate the performance differences when using threads compared to not using them. 
+The third image demonstrates how the proportion of train to test data size influences the accuracy of the machine learning model, conducted without threading.
